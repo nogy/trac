@@ -12,7 +12,7 @@ ENV TRAC_DEPENDS     "python-ldap python-psycopg2 python-mysqldb subversion git 
                       python-babel python-babel-localedata python-chardet python-docutils \
                       python-genshi python-olefile python-pil python-pkg-resources \
                       python-pygments python-roman python-subversion python-setuptools \
-                      python-tz \
+                      python-tz python-jinja2\
                       graphviz plantuml mscgen"
 RUN apt-get install --no-install-recommends --no-install-suggests -qy ${TRAC_DEPENDS} wget
 ENV TRAC_PACKAGES    "https://download.edgewall.org/trac/Trac-1.4.tar.gz \
